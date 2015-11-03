@@ -7,7 +7,6 @@ To view demo:
   
 To view project:
   1) download repo
-  2) download Unity
   2) open project in Unity
   
-(project preview picture attached)
+(preview picture attached)
