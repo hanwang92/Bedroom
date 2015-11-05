@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\Fader.cs" />
      <Compile Include="Assets\camera_rotate.cs" />
+     <Compile Include="Assets\flash.cs" />
      <Compile Include="Assets\horse_rotate.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Downloads/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

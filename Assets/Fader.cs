@@ -28,7 +28,7 @@ public class Fader : MonoBehaviour
     void FadeToClear()
     {
         // Lerp the colour of the texture between itself and transparent.
-        GetComponent<GUITexture>().color = Color.Lerp(GetComponent<GUITexture>().color, Color.clear, fadeSpeed * Time.deltaTime);
+        GetComponent<GUITexture>().color = Color.Lerp(GetComponent<GUITexture>().color, Color.clear, fadeSpeed * 2 * Time.deltaTime);
     }
 
 
