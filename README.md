@@ -9,4 +9,5 @@ To view project:
   1) download repo
   2) open project in Unity
   
-(preview picture attached)
+
+![Alt text](https://github.com/hanwang92/Bedroom/blob/master/Bedroom.JPG)
