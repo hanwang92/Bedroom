@@ -7,8 +7,8 @@ public class horse_rotate : MonoBehaviour {
 	int animation_frame = 0;  
 	
 	// Joint parameters
-	const float JOINT_MIN = -35.0f;
-	const float JOINT_MAX =  35.0f;
+	const float JOINT_MIN = -30.0f;
+	const float JOINT_MAX =  30.0f;
 	float joint_rot = 0.0f;
 	int count = 0;
 	
@@ -24,10 +24,25 @@ public class horse_rotate : MonoBehaviour {
 		const double joint_rot_speed = 0.03;
 		double joint_rot_t = (Mathf.Sin((float)(animation_frame*joint_rot_speed)) + 1.0) / 2.0;
 		joint_rot = (float)(joint_rot_t * JOINT_MIN + (1.0 - joint_rot_t) * JOINT_MAX);
-		
-		// Rotate about a point
-		transform.RotateAround(newpos, horse.transform.right, joint_rot * Time.deltaTime);
-		
-		animation_frame++;
+
+        if (joint_rot == 30.0f)
+        {
+
+            transform.rotation = Quaternion.Euler(293.9684f, 121.6302f, 359.6671f);
+        }
+        else if(joint_rot == -30.0f)
+        {
+            //horse.transform.position = new Vector3(transform.position.x, 0.5417913f, transform.position.z);
+
+        }
+        else
+        {
+            // Rotate about a point
+            transform.RotateAround(newpos, horse.transform.right, joint_rot * Time.deltaTime);
+        }
+
+        horse.transform.position = new Vector3(transform.position.x, 0.5117913f, transform.position.z);
+
+        animation_frame++;
 	}
 }
