@@ -12,12 +12,11 @@ public class camera_rotate : MonoBehaviour {
         fade = FindObjectOfType(typeof(Fader)) as Fader;
     }
 	
-	// Update is called once per frame
+	// Rotate camera across scene
 	void Update () {
         GameObject floor;
         floor = GameObject.Find("FLOOR");
         Vector3 newpos = floor.transform.forward;
-        //newpos.x = newpos.x - adjust;
         newpos.z = newpos.z - adjust;
 
         if (animation_frame < 760)

@@ -49,17 +49,11 @@
      <Compile Include="Assets\camera_rotate.cs" />
      <Compile Include="Assets\flash.cs" />
      <Compile Include="Assets\horse_rotate.cs" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>D:/Downloads/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Downloads/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>D:/Downloads/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>D:/Downloads/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>D:/Downloads/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

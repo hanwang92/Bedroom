@@ -4,8 +4,6 @@ using System.Collections;
 public class Fader : MonoBehaviour
 {
     public float fadeSpeed = 0.4f;          // Speed that the screen fades to and from black.
-
-
     private bool sceneStarting = true;      // Whether or not the scene is still fading in.
 
 
@@ -64,10 +62,5 @@ public class Fader : MonoBehaviour
 
         // Start fading towards black.
         FadeToBlack();
-
-        // If the screen is almost black...
-        //if (GetComponent<GUITexture>().color.a >= 0.95f)
-            // ... reload the level.
-            //Application.LoadLevel(0);
     }
 }

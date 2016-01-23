@@ -27,22 +27,18 @@ public class horse_rotate : MonoBehaviour {
 
         if (joint_rot == 30.0f)
         {
-
             transform.rotation = Quaternion.Euler(293.9684f, 121.6302f, 359.6671f);
         }
         else if(joint_rot == -30.0f)
         {
             //horse.transform.position = new Vector3(transform.position.x, 0.5417913f, transform.position.z);
-
         }
         else
         {
             // Rotate about a point
             transform.RotateAround(newpos, horse.transform.right, joint_rot * Time.deltaTime);
         }
-
         horse.transform.position = new Vector3(transform.position.x, 0.5117913f, transform.position.z);
-
         animation_frame++;
 	}
 }
